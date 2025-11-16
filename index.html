@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML, CSS, Web, Web Development, JavaScript">  
     <link rel="stylesheet" href="./assets/styles/style.css" media="all">
     <link rel="icon" href="./assets/media/favicon.png?v=2" type="image/x-icon"> 
+    <script src="./assets/scripts/script.js" defer></script>
     <title>FakeBook</title>
   </head>
   <body>
@@ -24,14 +25,29 @@
             <a href="#">Settings</a>
           </div>
           <div>
-          <img src="./assets/media/user-icon.png" alt="user-icon"></div>
+          <img src="./assets/media/user-icon.png" alt="user-icon" id="user-icon"></div>
         </div>
       </header>
+      <div class="user-info hidden">
+          <div class="info-header">
+            <input type="button" value="&times;" id="cancel-dropdown">
+            <p>ID : #123abc</p>
+          </div><hr>
+          <div class="info-body">
+            <p id="name">Name: Khalid</p>
+            <p id="username">User Name: khallib</p>
+            <p id="email">Email Name: khalid@email.com</p>
+          </div>
+        </div>
       <div class="container">
         <div class="input-field">
           <div class="input-textarea"><textarea placeholder="What's new?"></textarea></div>
+          <div id="preview"></div>
           <div class="input-buttons">
-            <img src="./assets/media/media_icon.png" id="media-icon">
+            <input type="file" id="fileInput" accept="image/*" style="display:none">
+            <label for="fileInput">
+              <img src="./assets/media/media_icon.png" alt="Upload" style="width:50px; cursor:pointer;">
+            </label>
             <input type="button" value="Post" id="post">
           </div>
         </div>
@@ -43,22 +59,10 @@
               <p>Khalid</p>
             </div>
             <div class="post-date"><p>00/00/0000</p></div>
-          </div>
-          <div class="post-body">
-            <img src="#">
-            <p></p>
-          </div>
-        </div>
-
-        <div class="user-info">
-          <div class="info-header">
-            <img src="./assets/media/user-icon.png" id="user-info-icon">
-            <p>User ID: #123abc</p>
           </div><hr>
-          <div class="info-body">
-            <p id="name">Name: Khalid</p>
-            <p id="username">User Name: khallib</p>
-            <p id="email">Email Name: khalid@email.com</p>
+          <div class="post-body">
+            <p class="post-text">Hello, World</p>
+            
           </div>
         </div>
       </div>

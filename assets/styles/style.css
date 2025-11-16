@@ -45,7 +45,7 @@ header img {
 
 .input-field {
   width: 550px;
-  height: 190px;
+  padding: 1rem;
   background-color: #1F2229;
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +66,6 @@ header img {
   padding: 1rem;
   resize: none;
   color: white;
-  text-align: justify;
 }
 
 .input-buttons {
@@ -109,6 +108,11 @@ header img {
   color: white;
   padding: 1rem;
   border-radius: 5px;
+  position: absolute;
+  right: 1rem;
+}
+
+.hidden {
   display: none;
 }
 
@@ -129,6 +133,19 @@ header img {
   width: 40px;
   height: 40px;
 }
+#cancel-dropdown {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background:none;
+  color: white;
+  transition: ease-in-out 0.5s;
+}
+
+#cancel-dropdown:hover {
+  transform: scale(1.05);
+}
+
 .post-container {
   background-color: #F4F4F6;
   width:550px;
@@ -150,6 +167,15 @@ header img {
   display: flex;
   align-items: center;
 }
+
+.post-image {
+  border-radius: 5px;
+}
+.post-text {
+  font-size: 15px;
+  margin: 5px 0 1rem 0;
+}
+
 
 @media (max-width: 600px) {
   .header-flex {
