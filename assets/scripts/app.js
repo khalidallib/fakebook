@@ -50,8 +50,8 @@ const subscriber = new Subscriber(
   "Khalid Alli-B",
   "khallib",
   "khalid@email.com",
-  ["TechPage", "GamingPage"],
-  ["WebDev Group", "UI/UX Group"],
+  ["HTML Page", "CSS Page"],
+  ["FrontEnd Dev", "BackEnd Dev"],
   true
 );
 
