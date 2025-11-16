@@ -73,7 +73,7 @@ header img {
   justify-content:  space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  
   margin-top: auto;
 }
 #post {
@@ -102,6 +102,12 @@ header img {
 #media-icon:hover {
   transform: scale(1.10);
 }
+
+.media-input-detail {
+  display: flex;
+  align-items: center;
+}
+
 .user-info {
   width: 200px;
   background-color: #1F2229;

@@ -31,12 +31,11 @@
       <div class="user-info hidden">
           <div class="info-header">
             <input type="button" value="&times;" id="cancel-dropdown">
-            <p>ID : #123abc</p>
-          </div><hr>
+          </div>
           <div class="info-body">
-            <p id="name">Name: Khalid</p>
-            <p id="username">User Name: khallib</p>
-            <p id="email">Email Name: khalid@email.com</p>
+            <p id="name">Name: </p>
+            <p id="username">User Name:</p>
+            <p id="email">Email: </p>
           </div>
         </div>
       <div class="container">
@@ -44,25 +43,14 @@
           <div class="input-textarea"><textarea placeholder="What's new?"></textarea></div>
           <div id="preview"></div>
           <div class="input-buttons">
-            <input type="file" id="fileInput" accept="image/*" style="display:none">
-            <label for="fileInput">
-              <img src="./assets/media/media_icon.png" alt="Upload" style="width:50px; cursor:pointer;">
-            </label>
-            <input type="button" value="Post" id="post">
-          </div>
-        </div>
-
-        <div class="post-container">
-          <div class="post-header">
-            <div class="post-header-info">
-              <img src="./assets/media/user-post-icon.png" id="user-info-icon">
-              <p>Khalid</p>
+            <div class="media-input-detail">
+              <input type="file" id="fileInput" accept="image/*" style="display:none">
+              <label for="fileInput">
+              <img src="./assets/media/media_icon.png" alt="Upload" id="media-icon">
+              </label>
+              <span id="fileName" style="color:white; margin-left:10px;"></span>
             </div>
-            <div class="post-date"><p>00/00/0000</p></div>
-          </div><hr>
-          <div class="post-body">
-            <p class="post-text">Hello, World</p>
-            
+            <input type="button" value="Post" id="post" disabled>
           </div>
         </div>
       </div>
